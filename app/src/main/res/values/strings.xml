@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OTP Verification</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="msg_send_password">We will send you a password on this mobile number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="prefix_es">+34 - </string>
+    <string name="phone_number_example">123456789</string>
+    <string name="get_code">GET CODE</string>
+</resources>
