@@ -6,4 +6,9 @@
     <string name="prefix_es">+34 - </string>
     <string name="phone_number_example">123456789</string>
     <string name="get_code">GET CODE</string>
+    <string name="we_will_send_you_a_code_on_this_mobile_number">We will send you a code on this mobile number</string>
+    <string name="didnt_receive_the_code">Didn\'t receive the code?</string>
+    <string name="resend_code">RESEND CODE</string>
+    <string name="verify">Verify</string>
+    <string name="enter_the_code_sent_to">Enter the code sent to</string>
 </resources>
