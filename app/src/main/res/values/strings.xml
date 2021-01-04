@@ -11,4 +11,5 @@
     <string name="resend_code">RESEND CODE</string>
     <string name="verify">Verify</string>
     <string name="enter_the_code_sent_to">Enter the code sent to</string>
+    <string name="valid_number_required">Valid number is required</string>
 </resources>

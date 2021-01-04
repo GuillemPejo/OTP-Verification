@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:overScrollMode="never"
+    android:background="@drawable/background_gradient"
     android:scrollbars="none"
     tools:context=".SendOTPActivity">
 
@@ -14,13 +15,13 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="80dp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/send" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="70dp"
+            app:lottie_rawRes="@raw/send"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
             android:layout_marginTop="30dp"
             android:text="@string/otp_verification"
             android:textColor="@color/colorTextPrimary"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textStyle="bold"/>
 
         <TextView
@@ -56,19 +57,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="60dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Spinner
+                android:id="@+id/spinnerCountries"
+                android:layout_width="130dp"
                 android:layout_height="40dp"
-                android:gravity="center"
+                android:gravity="left"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:text="@string/prefix_es" />
+                android:layout_marginRight="10dp"/>
+
 
             <EditText
                 android:id="@+id/inputMobile"
@@ -90,6 +93,11 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="70dp"
             android:background="@color/colorDivider"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/buttonGetCode"
             android:layout_width="match_parent"
@@ -100,5 +108,16 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
     </LinearLayout>
+
 </ScrollView>
